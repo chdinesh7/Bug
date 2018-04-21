@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.4.min.js" type="text/javascript"></script>
+	<style></style>
+	</head>
+	<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-primary" style="background-color:aliceblue">
+            <div class="panel panel-heading " style="background-image: url(images/Blue-Backgrounds-HD-031.jpg);color: aliceblue">
+              <h3>Bug Issuse</h3>
+            </div>
+            <div class="panel-body" >
+              <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                  <form action="/create1">
+                    <table class="table  form-group">
+                      <tbody class="table-bordered boarderedR ">
+                        <tr>
+                          <th>Defect Id</th>
+                          <td style=""><input type="text" class="form-control" name="defectid"></td>
+                        </tr>
+                        <tr>
+                          <th>Module</th>
+                          <td style=""><input type="text" class="form-control" name="module"></td>
+                        </tr>
+                        <tr>
+                          <th>Scenarios</th>
+                          <td style=""><input type="text" class="form-control" name="scenarios"></td>
+                        </tr>
+                        <tr>
+                          <th>Sublevels</th>
+                          <td style=""><input type="text" class="form-control" name="sublevels"></td>
+                        </tr>
+                        <tr>
+                          <th>Defect Description</th>
+                          <td style=""><textarea class="form-control"  id="comment" name="d_desc"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th>Complexity</th>
+                          <td style=""><select class="form-control" id="sel1" name="complexity">
+                              <option>none</option>
+                              <option>low</option>
+                              <option>normal</option>
+                              <option>high</option>
+                              <option>urgent</option>
+                              <option>immediate</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <th>Expected Result</th>
+                          <td style=""><textarea class="form-control" name="e_result"  ></textarea></td>
+                        </tr>
+                        <tr>
+                          <th>Actual Result</th>
+                          <td style=""><textarea class="form-control" name="a_result"  ></textarea></td>
+                        </tr>
+                        <tr>
+                          <th>Status (pass/fail/blocked) </th>
+                          <td style=""><select class="form-control" name="Status_p">
+                              <option>Pass</option>
+                              <option>Fail</option>
+                              <option>Blocked</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <th>Severity </th>
+                          <td style=""><select class="form-control" name="severity" >
+                              <option>Medium</option>
+                              <option>High</option>
+                              <option>Low</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <th>Status</th>
+                          <td style=""><select class="form-control" name="status" >
+                              <option>Fixed</option>
+                              <option>Not Fixed</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <th>Assigned TO</th>
+                          <td style=""><select class="form-control" name="Assigned_to" >
+                              <option>Dinesh</option>
+                              <option>Charan</option>
+                              <option>Vamsi</option>
+                              <option>Sreekar</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                          <th>Assigned Date</th>
+                          <td style=""><input type="date" class="form-control" name="Assigned_d" ></td>
+                        </tr>
+                        <tr>
+                          <th>Developer Remarks</th>
+                          <td style=""><textarea class="form-control" name="d_remark"  ></textarea></td>
+                        </tr>
+                        <tr>
+                          <th>Tester Observation</th>
+                          <td style=""><textarea class="form-control" name="t_obse"  ></textarea></td>
+                        </tr>
+                      </tbody>
+                      <tfoot class="">
+                        <tr>
+                          <th></th>
+                          <td style="float: right"><input class="btn btn-primary" type="submit" value="Submit"></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
